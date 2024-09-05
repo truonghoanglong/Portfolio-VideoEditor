@@ -450,7 +450,8 @@ footer p {
   cursor: pointer;
 }
 .project img {
-  width: 100%;
+  max-width: 100%;
+  width: 340px;
   height: auto;
   border: 1px solid rgb(163, 163, 163);
 }
