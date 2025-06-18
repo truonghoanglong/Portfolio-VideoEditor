@@ -476,3 +476,32 @@ footer p {
     width: 50%;
   }
 }
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: flex-start; /* giữ ảnh căn theo đỉnh */
+}
+
+.image-container img {
+  max-height: 500px; /* giới hạn chiều cao tối đa */
+  height: auto;
+  width: auto; /* giữ nguyên tỉ lệ gốc */
+  border-radius: 8px;
+}
+
+#image {
+  position: relative;
+  height: 70vh;
+  margin-bottom: 5vh;
+  margin-top: 10vh;
+}
+
+@media (max-width: 600px) {
+  .image-container img {
+    max-width: 100%; /* chiếm toàn bộ chiều ngang nếu cần */
+    max-height: 150px; /* giảm chiều cao để phù hợp điện thoại */
+  }
+}
